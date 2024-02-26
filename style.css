@@ -1,0 +1,352 @@
+/* Reset */ 
+body, html{ font-family: 'Poppins', Arial, Helvetica, sans-serif; line-height: 1; font-size: 16px; box-sizing: border-box;margin: 0;padding: 0;}*,*:before,*:after{ box-sizing: border-box; }h1,h2,h3,h4,h5,h6, p, ol, ul{margin: 0 0 1rem 0;padding: 0;}ol,ul{padding-left: 20px;line-height: 1.5;}img{height: auto;}h1{font-size: 4rem;} h2{font-size: 3rem;} h3{font-size: 2rem;} h4{font-size: 1rem;} h5{font-size: 0.8rem;} h6{font-size: 0.6rem;}a{text-decoration:none}
+
+/* ! Body */
+body {
+    background: #fff;
+}
+
+.container {overflow: hidden;}
+
+h1 {
+    line-height: 1.2em;
+}
+
+h4 {
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.p1 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.8em;
+}
+
+.p2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.p3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/* ! Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 25px 30px 25px;
+}
+
+
+/* ! Logo */
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.logo_2 {
+    width: 250px;
+    height: 250px;
+}
+
+
+/* ! Navbar */
+.menu ul{
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    padding: 15px 40px;
+    display: block;
+    color: #000;
+    font-weight: bold;
+}
+
+
+/* ! Button */
+.button {
+    background: #049c53;
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #000;
+}
+
+.button:hover {
+    background: #048f3b;
+}
+
+.plus {
+    margin-bottom: 30px;
+}
+
+
+/* ! Hamburger */
+.hamburger {
+    display: none;
+}
+
+
+/* ! Media Menu / Header */
+@media (max-width: 768px) {
+
+    .header {
+        background: #fff;
+        padding-left: 20px;
+        padding-right: 60px;
+        position: relative;
+    }
+
+    .menu {
+        background: #fff;
+        position: absolute;
+        top: 160px;
+        right: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+    }
+
+    .menu li {width: 100%;}
+
+    .open .menu {right: 0;}
+
+    .hamburger {
+        display: block;
+        height: 25px;
+        width: 30px;
+        position: absolute;
+        top: 40px;
+        right: 15px;
+    }
+
+    .hamburger span {
+        display: block;
+        top: 8px;
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #000;
+    }
+
+    .hamburger span:nth-child(1){
+        margin-top: -6px;
+    }
+
+    .hamburger span:nth-child(2){
+        margin-top: 6px;
+    }
+
+}
+
+
+/* ! Hero */
+.hero {
+    display: flex;
+    padding: 5% 25px;
+}
+
+.hero__text{
+    width: 55%;
+    padding: 118px 20px 7% 20px;
+}
+
+.hero__img {
+    width: 45%;
+    padding: 110px 0 0 0;
+}
+
+/* ! Media Hero */
+@media (max-width: 768px) {
+
+    .hero {
+        flex-wrap: wrap;
+    }
+
+    .hero__text, .hero__img {
+        width: 100%;
+    }
+}
+
+
+/* ! Grid  */
+
+/* ! Palestra Box */
+.img-res1 {
+    height: auto;
+    width: 100%;
+    border-radius: 12px;
+    /* padding: 40px 0 0 0; */
+}
+
+/* ! Calcio-Tennis */
+.img-res2 {
+    height: auto;
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* ! Palestra */
+.img-res3 {
+    height: auto;
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* ! Square Mirrors */
+.img-res4 {
+    height: auto;
+    width: 95%;
+    border-radius: 12px;
+}
+
+/* ! Spa */
+.img-res5 {
+    height: auto;
+    width: 95%;
+    border-radius: 12px;
+}
+
+/* ! Running */
+.img-res6 {
+    height: auto;
+    width: 95%;
+    border-radius: 12px;
+}
+
+.grid {
+    display: flex;
+    padding: 60px 25px 0 25px;
+    flex-wrap: wrap;
+}
+
+.grid-1 {
+    display: flex;
+    padding: 100px 25px 25px 25px;
+    flex-wrap: wrap;
+}
+
+.grid-2 {
+    display: flex;
+    padding: 120px 25px 100px 25px;
+    flex-wrap: wrap;
+}
+
+.grid-3 {
+    display: flex;
+    padding: 100px 25px 120px 25px;
+    flex-wrap: wrap;
+}
+
+
+.col-55 {
+    padding: 10px 40px 0 20px;
+}
+
+.palestra {
+    padding: 10px 20px 0 40px;
+}
+
+
+/* ! Cover */
+
+.cover {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url('cover-gym.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.cover__text {
+    text-align: center;
+    max-width: 800px;
+    padding: 10%;
+    color: #fff;
+}
+
+
+/* ! Footer */
+.footer {
+    background: #000;
+}
+
+.col-25 > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* ul {
+    list-style-type: none;
+} 
+
+li {
+    cursor: pointer;
+}
+*/
+
+
+
+
+
+/* ! Utilities */
+.col-25 {width: 25%;}
+.col-33 {width: 33.33%; padding: 20px 0 0 0;}
+.col-30 {width: 30%;}
+.col-40 {width: 40%;}
+.col-45 {width: 45%;}
+.col-50 {width: 50%;}
+.col-55 {width: 55%;}
+.col-60 {width: 60%;}
+.col-65 {width: 65%;}
+.col-70 {width: 70%;}
+.col-75 {width: 75%;}
+.col-80 {width: 80%;}
+.col-85 {width: 85%;}
+.col-90 {width: 90%;}
+.col-95 {width: 95%;}
+.col-100{width: 100%;}
+
+.text-center {text-align: center;}
+
+.color-1 {color: #049c53;}
+.color-2 {color: #048f3b;}
+
+.corto {padding: 20px 0 0 25px;}
+
+.tw {color: #fff;}
+
+/* ! Media Columns */
+@media (max-width: 768px) {
+    .col-25,
+    .col-33,
+    .col-30,
+    .col-40,
+    .col-45,
+    .col-50,
+    .col-55,
+    .col-60,
+    .col-65,
+    .col-70,
+    .col-75,
+    .col-80,
+    .col-85,
+    .col-90,
+    .col-95,
+    .col-100{width: 100%;}
+}
+
+
